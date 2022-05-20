@@ -23,4 +23,4 @@ Bài lab này được trích từ SEEDLab (<https://seedsecuritylabs.org/Labs_2
 
 ## References
 
-- [li-xin-yi/RSA-Encryption-and-Signature](https://github.com/li-xin-yi/seedlab/tree/master/PKI)
+- [li-xin-yi/Crypto-PKI](https://github.com/li-xin-yi/seedlab/tree/master/PKI)
