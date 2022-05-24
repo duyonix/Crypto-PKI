@@ -24,17 +24,17 @@ echo "1000" > serial
 cd ../
 
 # Subject input
-# PEM pass phrase           = 123456
-# Verify PEM pass phrase    = 123456
+# PEM pass phrase               = 123456
+# Verify PEM pass phrase        = 123456
 # Country Name		        = VN
-# State Or Province Name    = HCM
+# State Or Province Name        = HCM
 # Locality Name		        = HCM
 # Organization Name	        = HCMUS
 # Organizational Unit Name	= HCMUS
-# Common Name		        = pkilab2022.com
-# Email Address		        = pkilab@gmail.com
+# Common Name		        = www.duy2022.com
+# Email Address		        = duy2022@gmail.com
 openssl req -new -x509 -keyout ca.key -out ca.crt -config openssl.cnf \
-        -subj "/C=VN/ST=HCM/L=HCM/O=HCMUS/OU=HCMUS/CN=pkilab2022.com" \
+        -subj "/C=VN/ST=HCM/L=HCM/O=HCMUS/OU=HCMUS/CN=www.duy2022.com" \
         -passout pass:123456
 
 # decoded content of X509 certificate and RSA key
