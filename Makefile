@@ -15,3 +15,13 @@ task5:
 
 task6:
 	cd Task/Task6; bash main.sh
+clean:
+	rm -rf 	demoCA \
+		 	ca.crt \
+			ca.crt.txt \
+			ca.key \
+			ca.key.txt \
+			server.crt \
+			server.csr \
+			server.key \
+			server.pem \
