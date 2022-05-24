@@ -21,7 +21,10 @@ clean:
 			ca.crt.txt \
 			ca.key \
 			ca.key.txt \
-			server.crt \
 			server.csr \
+			server.csr.txt \
 			server.key \
+			server.key.txt \
+			server.crt \
+			server.crt.txt \
 			server.pem \

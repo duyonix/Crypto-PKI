@@ -31,12 +31,12 @@ cd ../
 # Locality Name		        = HCM
 # Organization Name	        = HCMUS
 # Organizational Unit Name	= HCMUS
-# Common Name		        = PKILab
+# Common Name		        = pkilab2022.com
 # Email Address		        = pkilab@gmail.com
 openssl req -new -x509 -keyout ca.key -out ca.crt -config openssl.cnf \
-        -subj "/C=VN/ST=HCM/L=HCM/O=HCMUS/OU=HCMUS/CN=PKILab2022.com" \
+        -subj "/C=VN/ST=HCM/L=HCM/O=HCMUS/OU=HCMUS/CN=pkilab2022.com" \
         -passout pass:123456
 
 # decoded content of X509 certificate and RSA key
-openssl x509 -in ca.crt -out ca.crt.txt -text -noout
-openssl rsa  -in ca.key -out ca.key.txt -text -noout -passin pass:123456
+openssl x509 -in ca.crt -out ca.crt.txt -text
+openssl rsa  -in ca.key -out ca.key.txt -text -passin pass:123456
