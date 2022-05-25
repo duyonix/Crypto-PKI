@@ -28,3 +28,5 @@ clean:
 			server.crt \
 			server.crt.txt \
 			server.pem \
+			Labsetup/volumes/*
+			
