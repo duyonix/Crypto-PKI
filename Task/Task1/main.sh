@@ -31,10 +31,9 @@ cd ../
 # Locality Name		        = HCM
 # Organization Name	        = HCMUS
 # Organizational Unit Name	= HCMUS
-# Common Name		        = www.duy2022.com
-# Email Address		        = duy2022@gmail.com
+# Common Name		        = www.hcmusCA.com
 openssl req -new -x509 -keyout ca.key -out ca.crt -config openssl.cnf \
-        -subj "/C=VN/ST=HCM/L=HCM/O=HCMUS/OU=HCMUS/CN=www.duy2022.com" \
+        -subj "/C=VN/ST=HCM/L=HCM/O=HCMUS/OU=HCMUS/CN=www.hcmusCA.com" \
         -passout pass:123456
 
 # decoded content of X509 certificate and RSA key
