@@ -22,6 +22,9 @@ CONTAINER_ID=$(docker ps --format "{{.ID}}")
 CONTAINER_COMMANDS=$(cat ../Task/Task4/container_commands.sh)
 docker exec -it $CONTAINER_ID /bin/bash -c "$CONTAINER_COMMANDS"
 
+# Add this to /etc/hosts
+# 10.9.0.80	www.duy2022.com
+
 xdg-open https://www.duy2022.com
 # Firefox will show "Warning: Potential Security Risk Ahead"
 # to fix it, open about:preferences#privacy, scroll down to Certificates, click View Certificates...
