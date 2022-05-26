@@ -4,9 +4,6 @@ set -e
 # go to root folder
 cd ../../
 
-# generate public/private key pair
-openssl genrsa -aes128 -out server.key -passout pass:123456 1024
-
 # generate a Certificate Signing Request (CSR)
 openssl req -new -keyout server.key -out server.csr -config openssl.cnf \
         -subj "/C=VN/ST=HCM/L=HCM/O=HCMUS/OU=HCMUS/CN=www.duy2022.com" \
